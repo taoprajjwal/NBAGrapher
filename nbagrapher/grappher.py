@@ -17,7 +17,7 @@ save_dir = path.join(path.expanduser("~"), "NBA-Grapher")
 
 
 def date_format(date, format_as="dash"):
-    """g
+    """
     Util function for formatting season dates as required  by the sportsreference module. Dashed format for a season is the regular way its written, eg "2018-19". Single format only contains the second year of the NBA Season, i.e for the 2018-19 season the single date format is simply 2019
     :param date: Date to be formatted
     :type date: String or Integer
@@ -25,7 +25,7 @@ def date_format(date, format_as="dash"):
     :type: format_as: "dash" or "single"
     """
 
-    if format_as == "dash":
+    if format_as== "dash":
         if re.match("^\d{4}-\d\d", str(date)):
             return date
         else:
