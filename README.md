@@ -40,7 +40,7 @@ nbagrapher.plot_player_season(['iversal01','bryanko01'],"value_over_replacement_
 ```python
 nbagrapher.plot_player_season(['antetgi01','hardeja01','westbru01','curryst01','duranke01'],"player_efficiency_rating",start_year=2014,end_year=2019)
 ```
-![per][graphs/player_efficiency_rating.png]
+![per](graphs/player_efficiency_rating.png)
 
 - Cumulative points of the five top points scorers over the last decade
 
