@@ -4,7 +4,7 @@ from sportsreference.nba.boxscore import Boxscore
 from sportsreference.nba.teams import Teams
 import pandas as pd
 import io
-from os import path
+import os
 import base64
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
@@ -13,7 +13,10 @@ from matplotlib.dates import DateFormatter
 import re
 import datetime
 
-save_dir = path.join(path.expanduser("~"), "NBA-Grapher")
+save_dir = os.path.join(os.path.expanduser("~"), "NBA-Grapher")
+if not os.path.isdir(save_dir):
+    os.mkdir(save_dir)
+
 
 
 def date_format(date, format_as="dash"):
@@ -56,7 +59,7 @@ def return_plot(stat, fig, ax, return_type):
     elif return_type == "show":
         plt.show()
     elif return_type == "img":
-        plt.savefig(path.join(save_dir, stat + ".png"))
+        plt.savefig(os.path.join(save_dir, stat + ".png"))
     elif return_type == "html":
         img = io.BytesIO()
         plt.savefig(img, format="png")
