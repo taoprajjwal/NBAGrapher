@@ -13,7 +13,7 @@ Currently, four types of graphs are supported.
 
 Details on each of these functions can be found in the full [documentation](https://nbagrapher.readthedocs.io/en/latest/)
 
-A full list of avaiable statistics for each function can be found here.
+A full list of avaiable statistics for each function can be found [here](https://nbagrapher.readthedocs.io/en/latest/#list-of-available-stats).
 
 ---
 ### Installation
