@@ -4,7 +4,7 @@ NBA Grapher is a python script that can make plots and graphs of NBA comparing v
 
 NBA Grapher uses [sportsreference](https://github.com/roclark/sportsreference) for scraping data from [basketball-reference](http://basketball-reference.com) and creates plots using [matplotlib](https://matplotlib.org/)
 
-Currently, four types of graphs are supported.
+Currently, four types of graphs are supported, with options for radial graphs as well.
 
 - Player stat by season
 - Player stat by game
