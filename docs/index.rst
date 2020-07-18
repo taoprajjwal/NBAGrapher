@@ -7,15 +7,37 @@ Welcome to NBAGrapher's documentation!
 ======================================
 NBA Grapher is a small utility tool that automates the process of scraping data from basketball-reference and uses matplotlib to create frequenty used graphs.
 
-Graphing Functions
+The tool was initially built with `sportsreference <https://pypi.org/project/sportsreference/>`_ for simple scatter plots. Since then, the scraping has been switched to a slightly modified version of `basketball_reference_scraper <https://github.com/vishaalagartha/basketball_reference_scraper>`_, which allows greater flexibility for choosing between Per game, per minute and per possession statistics as well as filtering between playoffs and the regular season.
+
+To maintain backward compatibility, the original functions based on sportsreference are present in the current version, however radar charts and shot charts require basketball_reference_scraper.
+
+Graphical functions
 ======================================
-For the stats supported by each function see :ref:`List of available stats`
+For the stats supported by each function see :ref:`List of Sportsreference stats`
+
+Scatter plots
+---------------------------
+These are simple 2d plots that shows a player or a team's progression through seasons or games within a season
 
 .. automodule:: nbagrapher.grappher
-   :members: plot_player_season, plot_player_game,plot_team_season,plot_team_game
+   :members: plot_player_season, plot_player_game,plot_team_season,plot_team_game,player_season
 
-List of available stats
-=======================
+Shot Charts
+----------------------------
+Mapping of shots on a 2d plot of a basketball court.
+
+.. automodule:: nbagrapher.grappher
+   :members: player_shot_chart_season
+
+Radar Charts
+-------------------------------
+Displaying multiple stats of one or multiple players.
+
+.. automodule:: nbagrapher.grappher
+   :members: player_season_radar
+
+List of Sportsreference stats
+=====================================
 Each of the function has a varying degree of statistical measurements available to it. Some measures that are available on the per-season basis are applicable on game-to-game basic. This document outlines the possible stats by each of the function. Each of the following stats should be provided to the function as a string.
 
 plot_player_season()

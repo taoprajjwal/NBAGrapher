@@ -18,11 +18,11 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'NBAGrapher'
-copyright = '2019, Prajjwal Bhattarai'
+copyright = '2020, Prajjwal Bhattarai'
 author = 'Prajjwal Bhattarai'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = '1.1'
 
 
 # -- General configuration ---------------------------------------------------
