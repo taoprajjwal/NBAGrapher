@@ -362,6 +362,19 @@ ADVANCED
 - BPM
 - VORP
 
+Radar Chart Templates
+=======================
+
+The stats that are included in each template for the radar chart. For details, see the glossary in any player's basketball-reference page. `Example <https://www.basketball-reference.com/players/s/simmobe01.html>`_
+
+splits: ["MP","FG","FG%","STL","TOV","AST","TRB","PTS"]
+
+shooting: ["3P","3P%","2P","2P%","eFG%","FT","FT%"]
+
+advanced: ["PER","WS/48","VORP","TS%","BPM"]
+
+advanced_metrics: ["3PAr","FTr","TRB%","AST%","STL%","BLK%","TOV%","USG%"]
+
 Indices and tables
 ==================
 

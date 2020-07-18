@@ -27,7 +27,8 @@ stat_type_str={
 }
 
 radar_templates={
-"splits":["AST","STL","PTS","FG%","BLK","TOV"],
+"splits":["MP","FG","FG%","STL","TOV","AST","TRB","PTS"],
+"shooting":["3P","3P%","2P","2P%","eFG%","FT","FT%"],
 "advanced":["PER","WS/48","VORP","TS%","BPM"],
 "advanced_metrics":["3PAr","FTr","TRB%","AST%","STL%","BLK%","TOV%","USG%"]
 
@@ -36,19 +37,20 @@ radar_templates={
 templates_stat_type={
 
     "splits":"PER_GAME",
+    "shooting":"PER_GAME",
     "advanced":"ADVANCED",
     "advanced_rates":"ADVANCED"
 }
 
 ranges_dict={"PER_GAME":{"G":[6,78],"GS":[0,68],"MP":[7.0,31.63],"FG":[0.8,6.0],"FGA":[2.0,13.3],"FG%":[0.33299999999999996,0.5587],"3P":[0,2],"3PA":[0.1,5.4],"3P%":[0.125,0.41],"2P":[0.5,4.8],"2PA":[1.2,9.1],"2P%":[0.3922,0.607],"eFG%":[0.395,0.594],"FT":[0.2,2.8],"FTA":[0.3,3.6],"FT%":[0.5752,0.875],"ORB":[0.1,1.7],"DRB":[0.7,5.230000000000009],"TRB":[1.0,6.9300000000000095],"AST":[0.4,4.0],"STL":[0.17,1.2],"BLK":[0.0,0.8],"TOV":[2.0,0.3,],"PF":[2.7,0.6],"PTS":[2.0,16.63]},
              "PER_MINUTE":{"G":[6,78],"GS":[0,68],"MP":[46.4,2189.5],"FG":[3.2,8.03000000000001],"FGA":[8.3,17.2],"FG%":[0.33299999999999996,0.5587],"3P":[0.0,2.8],"3PA":[0.3,7.8],"3P%":[0.125,0.41],"2P":[1.5,6.8],"2PA":[3.47,12.73],"2P%":[0.3922,0.607],"FT":[0.6,4.1],"FTA":[0.9,5.5],"FT%":[0.5752,0.875],"ORB":[0.3,3.6300000000000097],"DRB":[2.5,8.4],"TRB":[3.1,12.0],"AST":[1.2,6.13000000000001],"STL":[0.4,1.8],"BLK":[0.0,1.6],"TOV":[3.1,0.9],"PF":[5.2,1.9],"PTS":[8.77,21.03]},
-             "PER_POSS":{"G":[6,78],"GS":[0,68],"MP":[46.4,2189.5],"FG":[4.3,10.6],"FGA":[10.97,23.03],"FG%":[0.33299999999999996,0.5587],"3P":[0.0,3.7300000000000098],"3PA":[0.4,10.4],"3P%":[0.125,0.41],"2P":[1.97,9.0],"2PA":[4.6,16.9],"2P%":[0.3922,0.607],"FT":[0.77,5.4],"FTA":[1.2,7.4300000000000095],"FT%":[0.5752,0.875],"ORB":[0.47,4.83000000000001],"DRB":[3.3,11.1],"TRB":[4.2,15.8],"AST":[1.6,8.23000000000001],"STL":[0.6,2.4],"BLK":[0.0,2.1],"TOV":[1.2,4.1],"PF":[2.6,7.0],"PTS":[11.7,27.83],"ORtg":[91,122],"DRtg":[105.0,116.3]},
-             "ADVANCED":{"G":[6,78],"MP":[46.4,2189.5],"PER":[5.8,20.5],"TS%":[0.4322,0.622],"3PAr":[0.0331,0.6467],"FTr":[0.0923,0.4256],"ORB%":[1.0,10.9],"DRB%":[7.57,25.23],"TRB%":[4.6,17.7],"AST%":[4.77,24.83],"STL%":[0.6,2.4],"BLK%":[0.0,3.7],"TOV%":[6.8,17.69],"USG%":[12.57,25.1],"OWS":[-0.2,3.2],"DWS":[0.0,2.5],"WS":[0.0,5.63000000000001],"WS/48":[-0.022000000000000002,0.17300000000000001],"OBPM":[-5.4,2.2],"DBPM":[-2.1,1.6],"BPM":[-6.4,2.5],"VORP":[-0.3,1.7]}
+             "PER_POSS":{"G":[6,78],"GS":[0,68],"MP":[46.4,2189.5],"FG":[4.3,10.6],"FGA":[10.97,23.03],"FG%":[0.33299999999999996,0.5587],"3P":[0.0,3.7300000000000098],"3PA":[0.4,10.4],"3P%":[0.125,0.41],"2P":[1.97,9.0],"2PA":[4.6,16.9],"2P%":[0.3922,0.607],"FT":[0.77,5.4],"FTA":[1.2,7.4300000000000095],"FT%":[0.5752,0.875],"ORB":[0.47,4.83000000000001],"DRB":[3.3,11.1],"TRB":[4.2,15.8],"AST":[1.6,8.23000000000001],"STL":[0.6,2.4],"BLK":[0.0,2.1],"TOV":[4.1,1.2],"PF":[7.0,2.6],"PTS":[11.7,27.83],"ORtg":[91,122],"DRtg":[90.0,116.3]},
+             "ADVANCED":{"G":[6,78],"MP":[46.4,2189.5],"PER":[5.8,20.5],"TS%":[0.4322,0.622],"3PAr":[0.0331,0.6467],"FTr":[0.0923,0.4256],"ORB%":[1.0,10.9],"DRB%":[7.57,25.23],"TRB%":[4.6,17.7],"AST%":[4.77,24.83],"STL%":[0.6,2.4],"BLK%":[0.0,3.7],"TOV%":[17.69,6.8],"USG%":[12.57,25.1],"OWS":[-0.2,3.2],"DWS":[0.0,2.5],"WS":[0.0,5.63000000000001],"WS/48":[-0.022000000000000002,0.17300000000000001],"OBPM":[-5.4,2.2],"DBPM":[-2.1,1.6],"BPM":[-6.4,2.5],"VORP":[-0.3,1.7]}
              }
 
 def df_format(df,stats):
     if type(stats)!=list:
-        stats=list(stats)
+        stats=[stats]
     df=df[~df['SEASON'].duplicated()]
 
     for stat in stats:
@@ -569,10 +571,10 @@ def player_season_radar(players,season,player_labels=None,template="splits",play
     :param player_labels: Player labels to show in the legend, None to use Basketball-reference id
     :type player_labels: List of strings
     :param template: Pre-defined statistics chosen on the based of templates.
-    :type template: "splits","advanced","advanced_metrics"
+    :type template: "splits","shooting","advanced","advanced_metrics"
     :param playoffs: Include the playoffs or not
     :type playoffs: Boolean
-    :param stat_type: Type of statistic. "PER_GAME" by default
+    :param stat_type: Type of statistic. Do not need to specify if using a template, however if needed according to context you can. For instance splits can be used with PER_GAME, PER_POSS or PER_MINUTE
     :type stat_type: "PER_GAME", "PER_MINUTE","PER_POSS","ADVANCED"
     :param stats: If the stats you need are not defined by a template, you can use stats to get a new radar chart
     :type stats: List of strings
@@ -581,7 +583,7 @@ def player_season_radar(players,season,player_labels=None,template="splits",play
     :param figsize: Size of the matplotlib figure
     :type figsize: Tuple containing size in inches
     :param return_type: Various methods by which the graph can be returned
-    :type return_type:"img": png image, "fig":Matplotlib figure and axes,"show": calls the matplotlib show function (appropriate for jupyter notebooks), "html": base64 image useful for rendering in html pages
+    :type return_type: "img": png image, "fig":Matplotlib figure and axes,"show": calls the matplotlib show function (appropriate for jupyter notebooks), "html": base64 image useful for rendering in html pages
     """
     if type(players) is not list:
         players=[players]
@@ -591,6 +593,7 @@ def player_season_radar(players,season,player_labels=None,template="splits",play
 
     if not stat_type:
         stat_type=templates_stat_type[template]
+
     players_df=get_player_df(players,stat_type,stats,playoffs,player_labels)
     if not range:
         range = get_range(stats, players_df, season, stat_type)

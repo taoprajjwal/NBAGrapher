@@ -16,6 +16,8 @@ def prepare_shot_chart(figsize):
     ax.add_artist(matplotlib.patches.Circle((0, 190), 60, facecolor='none', edgecolor="black", lw=2))
     ax.add_artist(matplotlib.patches.Circle((0, 60), 15, facecolor='none', edgecolor="black", lw=2))
     ax.plot([-30, 30], [40, 40], linewidth=2, color="black")
+    ax.set_xticks([])
+    ax.set_yticks([])
     ax.set_xlim(-260, 260)
     ax.set_ylim(0, 470)
 
@@ -118,6 +120,8 @@ class ComplexRadar():
             ax.spines["polar"].set_visible(False)
             if ranges[i][0] < ranges[i][1]:
                 ax.set_ylim(*ranges[i])
+            else:
+                ax.set_ylim(*ranges[i][::-1])
         # variables for plotting
         self.angle = np.deg2rad(np.r_[angles, angles[0]])
         self.ranges = ranges
