@@ -248,6 +248,120 @@ plot_team_game()
 - two_point_field_goals
 - wins
 
+List of basketball_reference_scraper stats
+============================================
+
+The variables in this section is the same as the one on a players basketball-reference page. For details, see the glossary in any player's basketball-reference page. `Example <https://www.basketball-reference.com/players/s/simmobe01.html>`_
+
+PER_GAME
+----------
+- G
+- GS
+- MP
+- FG
+- FGA
+- FG%
+- 3P
+- 3PA
+- 3P%
+- 2P
+- 2PA
+- 2P%
+- eFG%
+- FT
+- FTA
+- FT%
+- ORB
+- DRB
+- TRB
+- AST
+- STL
+- BLK
+- TOV
+- PF
+- PTS
+
+PER_MINUTE
+------------
+- G
+- GS
+- MP
+- FG
+- FGA
+- FG%
+- 3P
+- 3PA
+- 3P%
+- 2P
+- 2PA
+- 2P%
+- FT
+- FTA
+- FT%
+- ORB
+- DRB
+- TRB
+- AST
+- STL
+- BLK
+- TOV
+- PF
+- PTS
+
+PER_POSS
+----------
+- G
+- GS
+- MP
+- FG
+- FGA
+- FG%
+- 3P
+- 3PA
+- 3P%
+- 2P
+- 2PA
+- 2P%
+- FT
+- FTA
+- FT%
+- ORB
+- DRB
+- TRB
+- AST
+- STL
+- BLK
+- TOV
+- PF
+- PTS
+- ORtg
+- DRtg
+
+ADVANCED
+------------
+- G
+- MP
+- PER
+- TS%
+- 3PAr
+- FTr
+- ORB%
+- DRB%
+- TRB%
+- AST%
+- STL%
+- BLK%
+- TOV%
+- USG%
+- OWS
+- DWS
+- WS
+- WS/48
+- OBPM
+- DBPM
+- BPM
+- VORP
+
 Indices and tables
 ==================
 
