@@ -1,4 +1,7 @@
 # NBAGrapher
+[![Documentation Status](https://readthedocs.org/projects/nbagrapher/badge/?version=latest)](https://nbagrapher.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/NBAGrapher.svg)](https://badge.fury.io/py/NBAGrapher)
+[![Downloads](https://pepy.tech/badge/nbagrapher)](https://pepy.tech/project/nbagrapher)
 
 NBA Grapher is a python script that can make plots and graphs of NBA comparing various statistical measures of NBA players and teams
 
@@ -12,15 +15,12 @@ A full list of avaiable statistics for each function can be found [here](https:/
 
 ---
 ### Installation
-NBAGrapher can be installed from PyPi using PIP
+NBAGrapher can be installed from PyPi using PIP. The basketball_reference_scraper dependency is slightly modified from the original, so we will need to install it as well.
 ```sh
 $ pip install nbagrapher
+$ pip install git+git://github.com/taoprajjwal/basketball_reference_scraper@master
 ```
 ----
-### Examples
-
-
------
 License
 ----
 

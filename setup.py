@@ -7,7 +7,7 @@ README=(HERE/"README.md").read_text()
 
 setup(
     name="NBAGrapher",
-    version="1.1.0",
+    version="1.1.1",
     description="Graphing NBA player and team stats using matplotlib",
     long_description=README,
     long_description_content_type="text/markdown",
